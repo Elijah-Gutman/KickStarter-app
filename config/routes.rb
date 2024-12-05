@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   post "/users" => "users#create"
+  get "/categories" => "categories#index"
   post "/sessions" => "sessions#create"
   delete "/sessions" => "sessions#destroy"
 end

@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   get "/categories" => "categories#index"
   post "/sessions" => "sessions#create"
   delete "/sessions" => "sessions#destroy"
+  get "/projects" => "projects#index"
 end
